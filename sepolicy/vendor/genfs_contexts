@@ -27,8 +27,6 @@ genfscon sysfs /devices/platform/soc/soc:fpc1020/request_vreg                  u
 genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup_enable                 u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fpc1020/vendor                        u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/soc/soc:fpc1020                                        u:object_r:vendor_sysfs_fingerprint:s0
-genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup                        u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup26               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/wakeup             u:object_r:sysfs_wakeup:s0
@@ -40,7 +38,17 @@ genfscon sysfs /devices/platform/soc/[a-f0-9]+.qcom,spmi/spmi-0/spmi0-0[0-9]/[a-
 genfscon sysfs /devices/platform/soc/soc:vibrator_gpio/leds/vibrator u:object_r:sysfs_leds:s0
 
 # label more sysfs wakeup
-genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101] u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/active_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/active_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/event_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/expire_count u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/last_change_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/max_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/name u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/prevent_suspend_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/total_time_ms u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup/wakeup[0-101][0-101]/wakeup_count u:object_r:sysfs_wakeup:s0
+
 genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/active_count u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/active_time_ms u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/wakeup/wakeup[0-101][0-101]/event_count u:object_r:sysfs_wakeup:s0
