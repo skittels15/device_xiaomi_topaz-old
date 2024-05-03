@@ -22,4 +22,7 @@
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <integer name="config_batteryCalculatedCapacityDivider">1000</integer>
     <integer name="config_batteryDesignCapacityDivider">1000</integer>
+    
+    <!-- Whether to display Cloned Apps page in Settings (Settings > Apps > Cloned Apps).-->
+    <bool name="config_cloned_apps_page_enabled">true</bool>
 </resources>
