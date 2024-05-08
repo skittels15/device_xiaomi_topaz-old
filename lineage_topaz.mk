@@ -21,12 +21,10 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 12 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Device Configs
+# Device configs
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-WITH_GMS := true
-
+WITH_GMS := false
 # Matrixx
 MATRIXX_BUILD_TYPE := Unofficial
 MATRIXX_MAINTAINER := artemscine
