@@ -2,3 +2,6 @@
 attribute hal_mlipay;
 attribute hal_mlipay_client;
 attribute hal_mlipay_server;
+
+# Touchfeature
+attribute vendor_mfp-daemon;
