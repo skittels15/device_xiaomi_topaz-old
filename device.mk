@@ -444,6 +444,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Matrixx overlay
+PRODUCT_PACKAGES += \
+    UpdaterOverlayTopaz
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
